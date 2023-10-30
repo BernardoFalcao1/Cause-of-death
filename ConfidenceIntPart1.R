@@ -24,4 +24,4 @@ t<- -qt(0.025,n-1)
 Lt<- xbar- t*s/sqrt(n)
 Ut<- xbar+ t*s/sqrt(n)
 
-cat("The Upper and Lower bounds of Z interval is [", Lt, ",", Ut, "]")
+cat("The Upper and Lower bounds of T interval is [", Lt, ",", Ut, "]")
