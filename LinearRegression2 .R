@@ -14,10 +14,13 @@ abline(causeofdeath2.lm,col='red')
 coef(causeofdeath2.lm)
 
 #Histogram of the residual 
-hist(resid(causeofdeath2.lm),breaks=40)
+hist(resid(causeofdeath2.lm),breaks=40, main= 'Histogram of the residuals')
 
 #PLot for the fitted value vs the residueal to check for Normal distribution 
-plot(fitted.values(causeofdeath2.lm),resid(causeofdeath2.lm))
+plot(fitted.values(causeofdeath2.lm),resid(causeofdeath2.lm), 
+     xlab='Fitted values', 
+     ylab='Residuals',
+     main='Fitted values by residuals')
 abline(h=0)
 
 #Checking R-squared 
